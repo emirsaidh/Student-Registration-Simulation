@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 public class Advisor extends FacultyMember {
 	private ArrayList<Student> students;
-	
 	public Advisor() {
 		
 	}

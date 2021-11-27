@@ -6,7 +6,7 @@ public class Course {
     String courseName;
     Semester givenSemester;
     Schedule courseSchedule;
-    ArrayList<Student> students;
+    ArrayList<Student> students; 
     int courseCredit;
     ArrayList<Course> prerequsities;
     int section;

@@ -9,7 +9,7 @@ public class FacultyMember extends Person {
 	}
 	public FacultyMember(Double ssn, String firstName, String lastName,
 			String email, ArrayList<Course> presentedCourse, Schedule schedule) {
-		super(ssn, firstName, lastName, email, 0, 0);
+		super(ssn, firstName, lastName, email);
 		this.presentedCourses = presentedCourse;
 		this.schedule = schedule;
 		

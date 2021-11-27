@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Student {
+public class Student extends Person{
     
     StudentID studentID;
     int yearEnrolled;
@@ -13,9 +13,11 @@ public class Student {
     public Student() {
     }
 
-    //After extends person change contructor with superclass attributes
-    public Student(StudentID studentID, int yearEnrolled, Schedule schedule, Transcript lastTranscript,
-            Transcript nextTranscript, ArrayList<Course> collisionCourses, ArrayList<String> logs) {
+
+    public Student(Double ssn, String firstName, String lastname, String email, StudentID studentID,
+            int yearEnrolled, Schedule schedule, Transcript lastTranscript, Transcript nextTranscript,
+            ArrayList<Course> collisionCourses, ArrayList<String> logs) {
+        super(ssn, firstName, lastname, email);
         this.studentID = studentID;
         this.yearEnrolled = yearEnrolled;
         this.schedule = schedule;

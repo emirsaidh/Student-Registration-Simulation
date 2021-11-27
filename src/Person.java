@@ -1,8 +1,8 @@
 
 public class Person {
 	private Double ssn;
-	private String name;
-	private String lastname;
+	private String firstName;
+	private String lastname; 
 	private String email;
 
 	
@@ -11,9 +11,9 @@ public class Person {
 	}
 	
 	public Person(Double ssn, String name, String lastname,
-			String email, int birthDate, int age) {
+			String email) {
 		this.ssn=ssn;
-		this.name=name;
+		this.firstName=name;
 		this.lastname=lastname;
 		this.email=email;
 		
@@ -26,10 +26,10 @@ public class Person {
 		this.ssn = ssn;
 	}
 	public String getName() {
-		return name;
+		return firstName;
 	}
 	public void setName(String name) {
-		this.name = name;
+		this.firstName = name;
 	}
 	public String getLastname() {
 		return lastname;
@@ -46,7 +46,7 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "Person [email=" + email + ", lastname=" + lastname + ", name=" + name + ", ssn=" + ssn + "]";
+		return "Person [email=" + email + ", lastname=" + lastname + ", name=" + firstName + ", ssn=" + ssn + "]";
 	}
 
 	
