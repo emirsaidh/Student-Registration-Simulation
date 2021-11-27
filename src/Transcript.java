@@ -7,10 +7,11 @@ public class Transcript {
     double totalGPA;
     ArrayList<Integer> passedCredits; 
     ArrayList<Integer> failedCredits;
-    ArrayList<Course> coursesPassed;
+    ArrayList<Course> coursesPassed; 
     ArrayList<Course> coursesFailed;
     ArrayList<Course> coursesNotTaken;
-    ArrayList<Course> activeCourses;//knk mola
+    ArrayList<Course> activeCourses;
+    //nasıl yani nerde
     
     public Transcript() {
     }
@@ -19,7 +20,7 @@ public class Transcript {
             ArrayList<Integer> failedCredits, ArrayList<Course> coursesPassed, ArrayList<Course> coursesFailed,
             ArrayList<Course> coursesNotTaken, ArrayList<Course> activeCourses) {
         this.semester = semester;
-        this.gpa = gpa;
+        this.gpa = gpa; 
         this.totalGPA = totalGPA;
         this.passedCredits = passedCredits;
         this.failedCredits = failedCredits;

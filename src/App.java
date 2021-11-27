@@ -11,14 +11,17 @@ public class App {
 
         Semester fall20 = new Semester(1, "Fall"); 
 
-        ArrayList<Course> oopPre;
-        ArrayList<Student> studentsExample; 
+        ArrayList<Course> oopPre = new ArrayList<Course>();
+        ArrayList<Student> studentsExample = new ArrayList<Student>(); 
+        ArrayList<String> logsExample = new ArrayList<String>(); 
+        
 
         Course oop = new Course("CSE3033", "OOSD", fall20, schedule1, studentsExample, 5, oopPre, 1, 50, "Lab"); 
 
-        Transcript transcript1 = new Transcript(fall20, );
+        Transcript transcript1 = new Transcript(); 
 
-        Student student1 = new Student(72612, "Ahmet", "Can", "a@hotmail.com", studentID1, 2020, schedule1, lastTranscript, nextTranscript, collisionCourses, logs);
+        Student student1 = new Student(72612, "Ahmet", "Can", "a@hotmail.com", studentID1, 2020, schedule1, transcript1, transcript1, oopPre, logsExample);
+        System.out.println(student1);// nasıl yani
         
     }
 }

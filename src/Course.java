@@ -11,7 +11,7 @@ public class Course {
     ArrayList<Course> prerequsities;
     int section;
     int quota;
-    String type;
+    String type; 
     
     public Course() {
     }

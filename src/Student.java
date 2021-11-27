@@ -10,7 +10,7 @@ public class Student extends Person{
     ArrayList<Course> collisionCourses;
     ArrayList<String> logs;
 
-    public Student() {
+    public Student(int i, String string, String string2, String string3, StudentID studentID1, int j, Schedule schedule1, Transcript transcript1, Transcript transcript12, ArrayList<Course> oopPre, ArrayList<String> logsExample) {
     }
 
 
@@ -29,6 +29,15 @@ public class Student extends Person{
 
     public void showTranscript(){}
 
-    
+
+    @Override
+    public String toString() {
+        return "Student [collisionCourses=" + collisionCourses + ", lastTranscript=" + lastTranscript+ ", First Name=" + super.getName() + ", logs=" + logs
+                + ", nextTranscript=" + nextTranscript + ", schedule=" + schedule + ", studentID=" + studentID
+                + ", yearEnrolled=" + yearEnrolled + "]";
+    }
+
+
+    //toString yok mu umlde student için ekleyelim bence
 
 }
