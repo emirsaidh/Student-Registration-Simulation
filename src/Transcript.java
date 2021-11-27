@@ -2,20 +2,20 @@ import java.util.ArrayList;
 
 public class Transcript {
     
-    int semester;
+    Semester semester;
     ArrayList<Double> gpa;
     double totalGPA;
-    ArrayList<Integer> passedCredits;
+    ArrayList<Integer> passedCredits; 
     ArrayList<Integer> failedCredits;
     ArrayList<Course> coursesPassed;
     ArrayList<Course> coursesFailed;
     ArrayList<Course> coursesNotTaken;
-    ArrayList<Course> activeCourses;
+    ArrayList<Course> activeCourses;//knk mola
     
     public Transcript() {
     }
 
-    public Transcript(int semester, ArrayList<Double> gpa, double totalGPA, ArrayList<Integer> passedCredits,
+    public Transcript(Semester semester, ArrayList<Double> gpa, double totalGPA, ArrayList<Integer> passedCredits,
             ArrayList<Integer> failedCredits, ArrayList<Course> coursesPassed, ArrayList<Course> coursesFailed,
             ArrayList<Course> coursesNotTaken, ArrayList<Course> activeCourses) {
         this.semester = semester;
@@ -29,11 +29,11 @@ public class Transcript {
         this.activeCourses = activeCourses;
     }
 
-    public int getSemester() {
+    public Semester getSemester() {
         return semester;
     }
 
-    public void setSemester(int semester) {
+    public void setSemester(Semester semester) {
         this.semester = semester;
     }
 
