@@ -44,5 +44,10 @@ public class Person {
 		this.email = email;
 	}
 
+	@Override
+	public String toString() {
+		return "Person [email=" + email + ", lastname=" + lastname + ", name=" + name + ", ssn=" + ssn + "]";
+	}
+
 	
 }

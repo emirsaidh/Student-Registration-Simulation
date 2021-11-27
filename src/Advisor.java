@@ -1,4 +1,6 @@
-public class Advisor extends Faculty Member {
+import java.util.ArrayList;
+
+public class Advisor extends FacultyMember {
 	private ArrayList<Student> students;
 	
 	public Advisor() {
@@ -16,12 +18,12 @@ public class Advisor extends Faculty Member {
 	public void setStudents(ArrayList<Student> students) {
 		this.students = students;
 	}
-	public boolean checkCreditsForTechnicalElective(Student student, Course course) {
-		return True;
-	}
-	public boolean checkHourCollision(Student student, Course course) {
-		return True;
-	}
+	// public boolean checkCreditsForTechnicalElective(Student student, Course course) {
+	// 	return True;
+	// }
+	// public boolean checkHourCollision(Student student, Course course) {
+	// 	return True;
+	// }
 	public void detectConflict(Student student, Course course) {
 		
 	}

@@ -103,13 +103,20 @@ public class Transcript {
 
     public void calculateGPAs(int term){}
 
-    public double calculateTermGPA(ArrayList<Course> termPassed, ArrayList<Course> termFailed){}
+    public double calculateTermGPA(ArrayList<Course> termPassed, ArrayList<Course> termFailed){
+        return 0.0;}
 
-    public int calculateTakenCredit(){}
+    public int calculateTakenCredit(){
+        return 0;
+    }
 
-    public int calculateCompletedCredit(){}
+    public int calculateCompletedCredit(){
+        return 0;
+    }
 
-    public double getGradeEquivalent(String grade){}
+    public double getGradeEquivalent(String grade){
+        return 0.0;
+    }
 
     
     

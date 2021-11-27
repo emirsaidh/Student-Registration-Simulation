@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class FacultyMember extends Person {
 	private ArrayList<Course> presentedCourses;
@@ -8,7 +9,7 @@ public class FacultyMember extends Person {
 	}
 	public FacultyMember(Double ssn, String firstName, String lastName,
 			String email, ArrayList<Course> presentedCourse, Schedule schedule) {
-		super(ssn, firstName, lastName, email);
+		super(ssn, firstName, lastName, email, 0, 0);
 		this.presentedCourses = presentedCourse;
 		this.schedule = schedule;
 		
@@ -27,9 +28,10 @@ public class FacultyMember extends Person {
 	public void setSchedule(Schedule schedule) {
 		this.schedule = schedule;
 	}
-	
 	@Override
 	public String toString() {
-		
+		return "FacultyMember [presentedCourses=" + presentedCourses + ", schedule=" + schedule + "]";
 	}
+	
+	
 }
