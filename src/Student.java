@@ -2,18 +2,18 @@ import java.util.ArrayList;
 
 public class Student extends Person{
     
-    StudentID studentID;
-    int yearEnrolled;
-    Schedule schedule;
-    Transcript lastTranscript;
-    Transcript nextTranscript;
-    ArrayList<Course> collisionCourses;
-    ArrayList<String> logs;
+    private StudentID studentID;
+    private int yearEnrolled;
+    private Schedule schedule;
+    private Transcript lastTranscript;
+    private Transcript nextTranscript;
+    private ArrayList<Course> collisionCourses;
+    private ArrayList<String> logs;
 
     public Student() {
     }
 
-    public Student(Double ssn, String firstName, String lastname, String email, StudentID studentID,
+    public Student(String ssn, String firstName, String lastname, String email, StudentID studentID,
             int yearEnrolled, Schedule schedule, Transcript lastTranscript, Transcript nextTranscript,
             ArrayList<Course> collisionCourses, ArrayList<String> logs) {
         super(ssn, firstName, lastname, email);
@@ -23,6 +23,62 @@ public class Student extends Person{
         this.lastTranscript = lastTranscript;
         this.nextTranscript = nextTranscript;
         this.collisionCourses = collisionCourses;
+        this.logs = logs;
+    }
+
+    public StudentID getStudentID() {
+        return studentID;
+    }
+
+    public void setStudentID(StudentID studentID) {
+        this.studentID = studentID;
+    }
+
+    public int getYearEnrolled() {
+        return yearEnrolled;
+    }
+
+    public void setYearEnrolled(int yearEnrolled) {
+        this.yearEnrolled = yearEnrolled;
+    }
+
+    public Schedule getSchedule() {
+        return schedule;
+    }
+
+    public void setSchedule(Schedule schedule) {
+        this.schedule = schedule;
+    }
+
+    public Transcript getLastTranscript() {
+        return lastTranscript;
+    }
+
+    public void setLastTranscript(Transcript lastTranscript) {
+        this.lastTranscript = lastTranscript;
+    }
+
+    public Transcript getNextTranscript() {
+        return nextTranscript;
+    }
+
+    public void setNextTranscript(Transcript nextTranscript) {
+        this.nextTranscript = nextTranscript;
+    }
+
+    public ArrayList<Course> getCollisionCourses() {
+        return collisionCourses;
+    }
+
+    public void setCollisionCourses(ArrayList<Course> collisionCourses) {
+        this.collisionCourses = collisionCourses;
+    }
+
+    public ArrayList<String> getLogs() {
+        return logs;
+    }
+
+    public void setLogs(ArrayList<String> logs) {
         this.logs = logs;
     }
 
