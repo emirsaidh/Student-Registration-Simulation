@@ -9,6 +9,25 @@ public class Course {
     private ArrayList<Student> students; 
     private int courseCredit;
     private ArrayList<Course> prerequsities;
+
+    public Course() {
+    }
+
+    public Course(String courseCode, String courseName, Semester givenSemester, Schedule courseSchedule,
+            ArrayList<Student> students, int courseCredit, ArrayList<Course> prerequsities, int section, int quota,
+            String type) {
+        this.courseCode = courseCode;
+        this.courseName = courseName;
+        this.givenSemester = givenSemester;
+        this.courseSchedule = courseSchedule;
+        this.students = students;
+        this.courseCredit = courseCredit;
+        this.prerequsities = prerequsities;
+        this.section = section;
+        this.quota = quota;
+        this.type = type;
+    }
+
     public String getCourseCode() {
         return courseCode;
     }
@@ -93,23 +112,7 @@ public class Course {
     private int quota;
     private String type; 
     
-    public Course() {
-    }
 
-    public Course(String courseCode, String courseName, Semester givenSemester, Schedule courseSchedule,
-            ArrayList<Student> students, int courseCredit, ArrayList<Course> prerequsities, int section, int quota,
-            String type) {
-        this.courseCode = courseCode;
-        this.courseName = courseName;
-        this.givenSemester = givenSemester;
-        this.courseSchedule = courseSchedule;
-        this.students = students;
-        this.courseCredit = courseCredit;
-        this.prerequsities = prerequsities;
-        this.section = section;
-        this.quota = quota;
-        this.type = type;
-    }
 
     @Override
     public String toString() {

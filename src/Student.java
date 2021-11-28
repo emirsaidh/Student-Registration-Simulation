@@ -84,12 +84,14 @@ public class Student extends Person{
 
     public void showTranscript(){}
 
-
     @Override
     public String toString() {
-        return "Student [collisionCourses=" + collisionCourses + ", lastTranscript=" + lastTranscript+ ", First Name=" + super.getName() + ", logs=" + logs
-                + ", nextTranscript=" + nextTranscript + ", schedule=" + schedule + ", studentID=" + studentID
-                + ", yearEnrolled=" + yearEnrolled + "]";
+        return "Student [FirstName= " + super.getFirstName() + ", LastName= " + super.getLastname() + ", SSN= " + super.getSsn() + ", Email= " + super.getEmail() 
+                + ", collisionCourses= " + collisionCourses + ", lastTranscript= " + lastTranscript + ", logs= " + logs
+                + ", nextTranscript= " + nextTranscript + ", schedule= " + schedule + ", studentID= " + studentID
+                + ", yearEnrolled= " + yearEnrolled + "]";
     }
+
+
  
 }

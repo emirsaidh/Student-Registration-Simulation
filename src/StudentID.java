@@ -34,6 +34,11 @@ public class StudentID {
         this.year = year;
     }
 
+    @Override
+    public String toString() {
+        return id;
+    }
+
     public String generateRandomID(int order, int year){
         //bunu constructor içine alalım mı şimdi
         id = "1501";
@@ -46,11 +51,7 @@ public class StudentID {
         }
         return id;
     }
-
-    @Override
-    public String toString() {
-        return "StudentID [id=" + id + ", order=" + order + ", year=" + year + "]";
-    }
-
+    
+    
     
 }

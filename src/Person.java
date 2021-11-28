@@ -22,7 +22,6 @@ public class Person {
 	public String getFirstName() {
 		return firstName;
 	}
-
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
@@ -32,12 +31,6 @@ public class Person {
 	}
 	public void setSsn(String ssn) {
 		this.ssn = ssn;
-	}
-	public String getName() {
-		return firstName;
-	}
-	public void setName(String name) {
-		this.firstName = name;
 	}
 	public String getLastname() {
 		return lastname;
