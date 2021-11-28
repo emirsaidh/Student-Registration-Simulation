@@ -5,7 +5,7 @@ public class App {
         System.out.println("Hello, World!");
 
         StudentID studentID1 = new StudentID(113, 19);
-        System.out.println(studentID1.id);//bunu mu oluşturcaz şimdi
+        System.out.println(studentID1.id);
 
         Schedule schedule1 = new Schedule();
 
@@ -21,7 +21,7 @@ public class App {
         Transcript transcript1 = new Transcript(); 
 
         Student student1 = new Student(72612, "Ahmet", "Can", "a@hotmail.com", studentID1, 2020, schedule1, transcript1, transcript1, oopPre, logsExample);
-        System.out.println(student1);// nasıl yani
+        System.out.println(student1.studentID); //ynei geldi
         
     }
 }

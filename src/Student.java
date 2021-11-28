@@ -36,8 +36,5 @@ public class Student extends Person{
                 + ", nextTranscript=" + nextTranscript + ", schedule=" + schedule + ", studentID=" + studentID
                 + ", yearEnrolled=" + yearEnrolled + "]";
     }
-
-
-    //toString yok mu umlde student için ekleyelim bence
-
+ 
 }
