@@ -30,10 +30,9 @@ public class App {
         Student stu1 = new Student("1405768679", "Ahmet", "Can", "abc@gmail.com", studentID1, 2019, schedule1, transcript1, transcript1, oopPre, logsExample);
         Student stu2 = new Student("1501991817", "Emir", "Said", "es@gmail.com", studentID2, 2017, schedule1, transcript1, transcript1, oopPre, logsExample);
         Student stu3 = new Student("5688493729", "Recep", "Tayyip", "rt@gmail.com", studentID3, 2020, schedule1, transcript1, transcript1, oopPre, logsExample);
-        studentsExample.add(stu1);
-        studentsExample.add(stu2);
-        studentsExample.add(stu3);
+       
         System.out.println(stu1);
+        System.out.println(stu2);
         //System.out.println(stu1.getStudentID()); //ynei geldi
         
     }
