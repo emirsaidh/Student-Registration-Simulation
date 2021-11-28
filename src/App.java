@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class App {
-    public static void main(String[] args, String string) throws Exception {
+    public static void main(String[] args) throws Exception {
       
 
         StudentID studentID1 = new StudentID(113, 19);
@@ -21,7 +21,8 @@ public class App {
         Transcript transcript1 = new Transcript(); 
 
         Student stu1 = new Student("string bu string", "Ahmet", "Can", "abc@gmail.com", studentID1, 19, schedule1, transcript1, transcript1, oopPre, logsExample);
-        System.out.println(stu1.getStudentID()); //ynei geldi
+        System.out.println(stu1);
+        //System.out.println(stu1.getStudentID()); //ynei geldi
         
     }
 }
