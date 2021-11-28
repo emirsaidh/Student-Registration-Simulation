@@ -1,6 +1,6 @@
 
 public class Person {
-	private Double ssn;
+	private String ssn;
 	private String firstName;
 	private String lastname; 
 	private String email;
@@ -10,7 +10,7 @@ public class Person {
 		
 	}
 	
-	public Person(Double ssn, String name, String lastname,
+	public Person(String ssn, String name, String lastname,
 			String email) {
 		this.ssn=ssn;
 		this.firstName=name;
@@ -19,10 +19,10 @@ public class Person {
 		
 	}
 	
-	public Double getSsn() {
+	public String getSsn() {
 		return ssn;
 	}
-	public void setSsn(Double ssn) {
+	public void setSsn(String ssn) {
 		this.ssn = ssn;
 	}
 	public String getName() {

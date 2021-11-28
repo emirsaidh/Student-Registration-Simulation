@@ -1,13 +1,37 @@
 public class StudentID {
     
-    int order;
-    String id;
-    int year;
+    private int order;
+    private String id;
+    private int year;
 
     public StudentID(int order, int year) {
         this.order = order;
         this.year = year;
         generateRandomID(order, year); 
+    }
+
+    public int getOrder() {
+        return order;
+    }
+
+    public void setOrder(int order) {
+        this.order = order;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
     }
 
     public String generateRandomID(int order, int year){

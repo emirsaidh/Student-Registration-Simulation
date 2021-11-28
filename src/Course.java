@@ -2,16 +2,16 @@ import java.util.ArrayList;
 
 public class Course {
     
-    String courseCode;
-    String courseName;
-    Semester givenSemester;
-    Schedule courseSchedule;
-    ArrayList<Student> students; 
-    int courseCredit;
-    ArrayList<Course> prerequsities;
-    int section;
-    int quota;
-    String type; 
+    private String courseCode;
+    private String courseName;
+    private Semester givenSemester;
+    private Schedule courseSchedule;
+    private ArrayList<Student> students; 
+    private int courseCredit;
+    private ArrayList<Course> prerequsities;
+    private int section;
+    private int quota;
+    private String type; 
     
     public Course() {
     }

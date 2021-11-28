@@ -5,7 +5,7 @@ public class Advisor extends FacultyMember {
 	public Advisor() {
 		
 	}
-	public Advisor(Double ssn, String firstName, String lastName,
+	public Advisor(String ssn, String firstName, String lastName,
 			String email, ArrayList<Course> presentedCourses,
 			Schedule schedule, ArrayList<Student> students) {
 		super(ssn, firstName, lastName, email, presentedCourses, schedule);

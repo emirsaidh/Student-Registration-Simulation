@@ -2,15 +2,15 @@ import java.util.ArrayList;
 
 public class Transcript {
     
-    Semester semester;
-    ArrayList<Double> gpa;
-    double totalGPA;
-    ArrayList<Integer> passedCredits; 
-    ArrayList<Integer> failedCredits;
-    ArrayList<Course> coursesPassed; 
-    ArrayList<Course> coursesFailed;
-    ArrayList<Course> coursesNotTaken;
-    ArrayList<Course> activeCourses;
+    private Semester semester;
+    private ArrayList<Double> gpa;
+    private double totalGPA;
+    private ArrayList<Integer> passedCredits; 
+    private ArrayList<Integer> failedCredits;
+    private ArrayList<Course> coursesPassed; 
+    private ArrayList<Course> coursesFailed;
+    private ArrayList<Course> coursesNotTaken;
+    private ArrayList<Course> activeCourses;
     //nasıl yani nerde
     
     public Transcript() {

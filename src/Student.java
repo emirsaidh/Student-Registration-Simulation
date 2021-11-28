@@ -10,9 +10,8 @@ public class Student extends Person{
     ArrayList<Course> collisionCourses;
     ArrayList<String> logs;
 
-    public Student(int i, String string, String string2, String string3, StudentID studentID1, int j, Schedule schedule1, Transcript transcript1, Transcript transcript12, ArrayList<Course> oopPre, ArrayList<String> logsExample) {
+    public Student() {
     }
-
 
     public Student(Double ssn, String firstName, String lastname, String email, StudentID studentID,
             int yearEnrolled, Schedule schedule, Transcript lastTranscript, Transcript nextTranscript,

@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args, String string) throws Exception {
         System.out.println("Hello, World!");
 
         StudentID studentID1 = new StudentID(113, 19);
-        System.out.println(studentID1.id);
+        //System.out.println(studentID1.id);
 
         Schedule schedule1 = new Schedule();
 
@@ -20,8 +20,8 @@ public class App {
 
         Transcript transcript1 = new Transcript(); 
 
-        Student student1 = new Student(72612, "Ahmet", "Can", "a@hotmail.com", studentID1, 2020, schedule1, transcript1, transcript1, oopPre, logsExample);
-        System.out.println(student1.studentID); //ynei geldi
+        Student stu1 = new Student("string", "Ahmet", "Can", "abc@gmail.com", studentID1, 19, schedule1, transcript1, transcript1, oopPre, logsExample);
+        System.out.println(stu1.studentID); //ynei geldi
         
     }
 }

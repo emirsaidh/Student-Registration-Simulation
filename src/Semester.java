@@ -1,7 +1,7 @@
 public class Semester {
     
-    int num;
-    String name;
+    private int num;
+    private String name;
     
     //Empty constructor
     public Semester(){}
