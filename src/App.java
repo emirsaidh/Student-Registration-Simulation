@@ -1,14 +1,22 @@
-import java.util.ArrayList; 
-import org.json.simple.JSONObject;   
+import java.util.ArrayList;
+import com.google.gson.Gson;
 
 public class App {
     public static void main(String[] args) throws Exception {
       
-        JSONObject obj=new JSONObject();
-        obj.put("name","sonoo");    
-        obj.put("age",new Integer(27));    
-        obj.put("salary",new Double(600000));    
-        System.out.print(obj);   
+         record Something(String name, int age, String Country){};
+
+         String json = "{\" marka \": \" Mercedes \", \" model \": AMG}";
+         Gson gson = new Gson();
+         
+        
+         class Araba {
+            public String marka = null;
+            public String model = null;
+         }
+
+         Araba araba = gson.fromJson(json,Araba.class);
+         System.out.println(araba.marka);
 
         StudentID studentID1 = new StudentID(113, 19);
         StudentID studentID2 = new StudentID(1, 17);
