@@ -1,8 +1,14 @@
-import java.util.ArrayList;
+import java.util.ArrayList; 
+import org.json.simple.JSONObject;   
 
 public class App {
     public static void main(String[] args) throws Exception {
       
+        JSONObject obj=new JSONObject();
+        obj.put("name","sonoo");    
+        obj.put("age",new Integer(27));    
+        obj.put("salary",new Double(600000));    
+        System.out.print(obj);   
 
         StudentID studentID1 = new StudentID(113, 19);
         StudentID studentID2 = new StudentID(1, 17);
